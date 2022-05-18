@@ -20,14 +20,14 @@ console.groupEnd();
 
 console.group("Triángulos");
 
-const ladoTriangulo1 = 6;
+/* const ladoTriangulo1 = 6;
 const ladoTriangulo2 = 6;
 const baseTriangulo = 4;
 console.log("Los lados del triángulo miden: " + ladoTriangulo1 + " cm" + ladoTriangulo2 + "cm" + baseTriangulo + "cm");
 
 const alturaTriangulo = 5.5;
 console.log("La altura del triángulo mide: " + alturaTriangulo + " cm");
-
+ */
 /* const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
 console.log("El perimetro del triángulo es: " + perimetroTriangulo + " cm");
  */
@@ -98,12 +98,53 @@ console.groupEnd();
 
 
 
+// Aquí interactuamos con el HTML
 
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value; // esto nos da el valor que ingresaron los usuarios
 
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
 
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value; // esto nos da el valor que ingresaron los usuarios
 
+    const area = areaCuadrado(value);
+    alert(area);
+}
 
+function calcularPerimetrotriangulo() {
+    const input = document.getElementById("InputTriangulo");
+    const value = input.value; // esto nos da el valor que ingresaron los usuarios
 
+    const perimetro = perimetroTriangulo(value);
+    alert(perimetro);
+}
 
+function calcularAreaTriangulo() {
+    const input = document.getElementById("InputTriangulo");
+    const value = input.value; // esto nos da el valor que ingresaron los usuarios
 
+    const area = areaTriangulo(value);
+    alert(area);
+}
+
+function calcularPerimetroCirculo() {
+    const input = document.getElementById("InputCirculo");
+    const value = input.value; // esto nos da el valor que ingresaron los usuarios
+
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo() {
+    const input = document.getElementById("InputCirculo");
+    const value = input.value; // esto nos da el valor que ingresaron los usuarios
+
+    const area = areaCirculo(value);
+    alert(area);
+}
 
