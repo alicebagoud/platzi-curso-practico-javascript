@@ -1,0 +1,47 @@
+<!--  
+
+    La Mediana es mucho más acertada que la media aritmetica.
+    Coger siempre el elemento que esté en la mitdad de la lista.
+    Si hay 2 elementos, se coge el del medio.
+    Por ejemplo:
+
+    Sueldo 1, sueldo 2, sueldo 3 = se escoge el sueldo 2.
+    450$, 500$, 600$ = 500$
+
+    Si hay 4 elementos, se escogen los 2 elementos de la mitad. 
+    Para eso, se hace el primedio de esos dos elementos.
+
+    Sueldo1, sueldo2, sueldo3, sueldo4
+    sueldo2 + sueldo 3 / 2 
+    450$, 500$, 600$, 100.000.000$
+    500$ + 600$ / 2 = 550$
+    
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediana</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculo de la Mediana</h1>
+    </header>
+    <section>
+      <form>
+        <label for="inputMediana">Ingresa tus datos: </label>
+        <input id="inputMediana" type="text" placeholder="Ej: 20, 10, 50" />
+        <button type="button" onclick="calcularMediana()">
+          Calcular la mediana
+        </button>
+        <p id="resultadoMediana"></p>
+      </form>
+    </section>
+    <script src="./mediana.js"></script>
+    <script src="./reto2.js"></script>
+  </body>
+</html>
