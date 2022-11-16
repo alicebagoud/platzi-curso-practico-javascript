@@ -1,26 +1,97 @@
-const precioOriginal = 120;
-const descuento = 18;
+const inputPrice = document.getElementById("InputPrice");
+const inputDiscount = document.getElementById("InputDiscount");
+const btn = document.getElementById("buttonCalcular");
+const pResult = document.getElementById("ResultP");
+
+btn.addEventListener('click', onClickButtonPriceDiscount);
+
 
 function calcularPrecioConDescuento(precio, descuento) {
-  const porcentajePrecioConDescuento = 100 - descuento;
-  const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
+  const porcentajeConDescuento = 100 - descuento;
+  const precioConDescuento = (precio * (porcentajeConDescuento)) / 100;
 
   return precioConDescuento;
 }
 
 function onClickButtonPriceDiscount() {
   const inputPrice = document.getElementById("InputPrice");
-  const priceValue = inputPrice.value;
+  const priceValue = Number(inputPrice.value);
 
-  const inputDiscount = document.getElementById("InputDiscount");
-  const discountValue = inputDiscount.value;
+  const InputDiscount = document.getElementById("InputDiscount");
+  const discountValue = Number(InputDiscount.value);
 
-  const inputCoupon = document.getElementById("InputCoupon");
-  const couponValue = inputCoupon.value;
+  //const inputCoupon = document.getElementById("InputCupon");
+  //const couponValue = Number(inputCoupon.value);
+
+  if (!priceValue || !discountValue) {
+    pResult.innerText = "Por favor llena los datos!";
+    return;
+  }
+
+  if (discountValue > 100) {
+    pResult.innerText = "El descuento no puede ser mayor a 100. Favor corregir."
+    return;
+  }
+
+  const newPrice = (priceValue * (100 - discountValue)) / 100;
+
+  pResult.innerText = "El nuevo precio con descuento es $" + newPrice;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  const precioOriginal = 120;
+const descuento = 18;
 
   /*   const coupons = ["El mejor descuento", "Un buen descuento", "Ça va"];
    */
-  let descuento;
+  //let descuento;
 
   // SOLUCION 1
 
@@ -48,7 +119,7 @@ function onClickButtonPriceDiscount() {
     descuento = 25;
   } */
 
-  const coupons = [
+  /* /const coupons = [
     {
       name: "El mejor descuento",
       descuento: 70,
@@ -79,7 +150,7 @@ function onClickButtonPriceDiscount() {
     const resultP = document.getElementById("ResultP");
     resultP.innerText = "El precio con descuento es de: $" + precioConDescuento;
   }
-}
+} */
 
 /* console.log({
   precioOriginal,
