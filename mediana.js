@@ -28,8 +28,7 @@ function calcularMediaAritmetica(lista) {
   
   function esPar(numerito) {
     if (numerito % 2 === 0) {
-      /*  El modulo o residuo(la division) no nos da un residuo. 
-      Todos los números pares cuando los divides entre 2 solo con enteros, no nos va a dar residuo. */
+      /*  El modulo o residuo(la division) no nos da un residuo. Todos los números pares cuando los divides entre 2 solo con enteros, no nos va a dar residuo. */
       return true;
     } else {
       return false;  /* es impar */
