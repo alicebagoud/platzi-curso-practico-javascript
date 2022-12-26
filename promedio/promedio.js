@@ -60,5 +60,6 @@ array.filter()
 manzana, naranja, banano --> se escoge el filtrado que se desea, por ejemplo la naranja
 
 array.reduce()
-manzana, naranja, banano --> se van sumando(en este caso, puede ser multiplicando, dividiendo...) los elementos del array, es decir todos los pedazos de la manzana, de la naranja y del banano
+manzana, naranja, banano --> se van sumando(en este caso, puede ser multiplicando, dividiendo...) 
+los elementos del array, es decir todos los pedazos de la manzana, de la naranja y del banano
 */
