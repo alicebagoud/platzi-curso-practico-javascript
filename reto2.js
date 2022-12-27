@@ -6,7 +6,7 @@ lista.sort(function (a, b) {
   return a - b;
 });*/
 
-function calcularMediaAritmetica(lista) {
+function calcularPromedio(lista) {
   const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
     return valorAcumulado + nuevoElemento;
   });
@@ -33,7 +33,7 @@ function calcularMediana(lista2) {
   if (siPar(sortLista.length)) {
     const elementoMitad = mitadLista2;
     const segundoElementoMitad = elementoMitad - 1;
-    const promedioElementos = calcularMediaAritmetica([elementoMitad, segundoElementoMitad]);
+    const promedioElementos = calcularPromedio([elementoMitad, segundoElementoMitad]);
     mediana1 = promedioElementos;
   } else {
     mediana1 = sortLista[mitadLista2];

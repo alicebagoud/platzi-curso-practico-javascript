@@ -1,2 +1,17 @@
-body{font-size:18px;font-family:"Courier New", Courier, monospace;background-color:black;color:white}h1{font-size:28px;text-align:center}h2{font-size:24px;text-align:center}form{display:inherit;text-align:center}
-/*# sourceMappingURL=style.css.map */
+body {
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+form {
+    display: inherit;
+    text-align: center;
+}
+  
