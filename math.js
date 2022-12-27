@@ -44,3 +44,6 @@ function calcularCirculo(radio){
 
 console.groupEnd("Circulo")
 
+/* 
+TODO: hacer que se pueda usar en HTML y no en la consola */
+

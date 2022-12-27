@@ -7,17 +7,14 @@ Por ejemplo 3.77 = 3. y 5,98873 = 5.
 */
 
 function calcularPromedio(lista) {
-  const sumaLista = lista.reduce(function(valorAcumulado = 0, nuevoElemento) {
-    return valorAcumulado + nuevoElemento;
-  });
+  const sumaLista = lista.reduce((valorAcumulado, nuevoElemento) => valorAcumulado = 0 + nuevoElemento);
   const promedioLista = sumaLista / lista.length;
   return promedioLista;
 }
 
 function calcularMediana(lista) {
-  const sortLista = lista.sort(function(primerElemento, segundoElemento) {
-    return primerElemento - segundoElemento;
-  });
+  const sortLista = lista.sort((primerElemento, segundoElemento) => primerElemento - segundoElemento);
+
   const mitadlista = parseInt(sortLista.length / 2);
 
 function siPar(numerito) {
@@ -42,5 +39,9 @@ if (siPar(sortLista.length)) {
   return mediana;
 }
 }
+
+/* 
+TODO: hacer que funcione el calculo de mediana
+*/
 
   

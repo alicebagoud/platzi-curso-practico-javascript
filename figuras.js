@@ -44,6 +44,10 @@ function areaTriangulo(base, altura) {
     return (base * altura) / 2;
 }
 
+/* 
+TODO: no funciona el area ni el perimetro 
+*/
+
 console.groupEnd();
 
 // Codigo del circulo
@@ -91,10 +95,10 @@ function areaCirculo(radio) {
     return (radio * radio) * PI;
 }
 
+/* 
+TODO: acortar el resultado decimal del resultado de circulo */
 
 console.groupEnd();
-
-
 
 
 

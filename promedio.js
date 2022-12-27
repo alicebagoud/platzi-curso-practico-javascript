@@ -20,3 +20,8 @@ sumaLista es igual a 100
 y nuestra lista[i] es ahora igual a la posición 1 en el array es decir 200
 Lo que da 100 + 200 = 300 
 */
+
+
+/* 
+TODO: que se pueda usar el HTML y no la consola
+*/
