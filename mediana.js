@@ -12,7 +12,46 @@ function calcularPromedio(lista) {
   return promedioLista;
 }
 
-function calcularMediana(lista) {
+function ordenarLista(listaDesordenada) {
+  const ordenarListaSort = ((valorAcumulado, nuevoValor) => valorAcumulado - nuevoValor);
+  const lista = listaDesordenada.sort(ordenarListaSort);
+  return lista;
+}
+
+function esPar(lista) {
+  return !(lista.length % 2); // true (1) si impar y false (0) si par
+  // si la lista es de 4 numeros % 2 => a 0 o sea par = true.
+  // pero como esta negada => !4 numeros % 2 = 1 o sea par = false.
+}
+
+function esImpar(lista) {
+  return lista.length % 2; // true (1) si par y false (0) si impar
+  // si la lista es de 5 numeros % 2 => 1 o sea impar = false.
+}
+
+function calcularMediana(listaDesordenada) {
+  const lista = ordenarLista(listaDesordenada);
+  const listaEsPar = esPar(lista);
+
+  if (listaEsPar) {
+    const indexMitad1ListaPar = (lista.length / 2) - 1;
+    const indexMitad2ListaPar = lista.length / 2;
+    const listaMitades = [];
+    listaMitades.push(lista[indexMitad1ListaPar]);
+    listaMitades.push(lista[indexMitad2ListaPar]);
+
+    const medianaListaPar = calcularPromedio(listaMitades);
+    return medianaListaPar;
+  } 
+  else {
+    const indexMitadListaImpar = Math.floor(lista.length / 2);
+    const medianaListaImpar = lista[indexMitadListaImpar];
+    return medianaListaImpar;
+  }
+}
+
+
+/* function calcularMediana(lista) {
   const sortLista = lista.sort((primerElemento, segundoElemento) => primerElemento - segundoElemento);
   const mitadLista = parseInt(sortLista.length / 2);
 
@@ -36,8 +75,4 @@ function calcularMediana(lista) {
     const resultadoMediana = document.getElementById("resultadoMediana");
     resultadoMediana.innerText = "La mediana es: " + mediana; 
   }
-}
-
-
-
-  
+} */
