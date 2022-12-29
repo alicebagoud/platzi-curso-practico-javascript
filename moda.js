@@ -38,12 +38,6 @@ lista1.map(
 
  // .entries convierte un objeto en un array
 
-/* const lista1Array = Object.entries(lista1Count).sort(
-    function (valorAcumulado, nuevoValor) {
-        valorAcumulado - nuevoValor
-    }
-); */
-
 Object.entries(lista1Count).sort(
     function (elementoA, elementoB) {
         if (elementoA > elementoB) return 1;
@@ -51,8 +45,6 @@ Object.entries(lista1Count).sort(
         if (elementoA < elementoB) return -1;
     }
 );
-
-// manera más corta: 
 
 const lista1Array = Object.entries(lista1Count).sort(
     function (elementoA, elementoB) {
