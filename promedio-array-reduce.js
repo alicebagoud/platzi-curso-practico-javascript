@@ -1,12 +1,21 @@
+function calcularPromedio(lista) {
+  const sumaLista = lista.reduce((valorAcumulado, nuevoValor) => valorAcumulado + nuevoValor);
+  const promedioLista = sumaLista / lista.length;  
+  return promedioLista;
+}
 
-function calcularPromedio(lista) { 
-  /* con el metodo reduce de los arrays que permite ir sumando cada uno de nuestros elementos */
-    const sumaLista = lista.reduce(function(valorAcumulado = 0, nuevoElemento) { 
-      /* el valorAcumulado empieza en 0 + el nuevoElemento que es el primer elemento que agregue nuestro cliente en el array */
-      return valorAcumulado + nuevoElemento
-    });
-  
-    const promedioLista = sumaLista / lista.length;
-    return promedioLista;
-  }
-  
+function resultadoPromedio() {
+  const inputPromedio = document.getElementById("inputPromedio");
+  const value = inputPromedio.value;
+
+  const promedio = calcularPromedio(value);
+
+  const resultPromedio = document.getElementById("resultPromedio");
+  resultPromedio.innerText = "Tu promedio es de: " + promedio;
+} 
+
+/* 
+TODO que funcione con HTML
+*/
+
+

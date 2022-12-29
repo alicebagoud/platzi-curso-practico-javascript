@@ -1,14 +1,12 @@
 <!-- 
-Promedio:
+    Promedio:
 
-Media Aritmética :
+    Media Aritmética :
 
-Valor 1 + valor 2 + valor 3 / la cantidad de los valores (3)
+    Valor 1 + valor 2 + valor 3 / la cantidad de los valores (3)
 
-Ejemplo: 300$ + 500$ + 700$ / 3 = 1033$
-
-
- -->
+    Ejemplo: 300$ + 500$ + 700$ / 3 = 1033$
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +19,15 @@ Ejemplo: 300$ + 500$ + 700$ / 3 = 1033$
   </head>
   <body>
     <h1>Promedios</h1>
-    <h3>Abrir la consola del inspector de elementos</h3>
+    <label for="InputCuadrado">
+      Escribe la lista de tus datos para sacar el promedio:
+    </label>
+    <input id="inputPromedio" type="text" placeholder="Ej: 10, 20, 50" >
+    <button type="button" onclick="resultadoPromedio()">Promedio</button>
+    <p id="resultPromedio"></p>
+    <p></p>
 
-    <script src="/promedio.js"></script>
+    <!--  <script src="/promedio.js"></script> -->
     <script src="/promedio-array-reduce.js"></script>
   </body>
 </html>

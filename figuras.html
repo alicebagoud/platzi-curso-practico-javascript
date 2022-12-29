@@ -15,7 +15,7 @@
       <h2>Calcula el área y permímetro de un cuadrado</h2>
       <form>
         <label for="InputCuadrado">
-          Escribe cuánto mide cada lado de tu cuadrado:
+          Escribe cuánto mide un lado de tu cuadrado:
         </label>
         <input id="InputCuadrado" type="number" />
         <button type="button" onclick="calcularPerimetroCuadrado()">
@@ -24,6 +24,8 @@
         <button type="button" onclick="calcularAreaCuadrado()">
           Calcular el área
         </button>
+        <p id="resultPerimetroCuadrado"></p>
+        <p id="resultAreaCuadrado"></p>
       </form>
     </section>
 
@@ -31,7 +33,7 @@
       <h2>Calcula el área y permímetro de un triángulo</h2>
       <form>
         <label for="InputTriangulo">
-          Escribe cuánto mide cada lado de tu triangulo:
+          Escribe cuánto mide un lado de tu triángulo isoceles:
         </label>
         <input id="InputTriangulo" type="number" />
         <button type="button" onclick="calcularPerimetroTriangulo()">
@@ -40,6 +42,13 @@
         <button type="button" onclick="calcularAreaTriangulo()">
           Calcular el área
         </button>
+        <button type="button" onclick="calcularAlturaTriangulo()">
+          Calcular la altura
+        </button>
+        <p id="resultPerimetroTriangulo"></p>
+        <p id="resultAreaTriangulo"></p>
+        <p id="resultAlturaTriangulo"></p>
+
       </form>
     </section>
 
@@ -47,7 +56,7 @@
       <h2>Calcula el área y permímetro de un circulo</h2>
       <form>
         <label for="InputCirculo">
-          Escribe cuánto mide cada lado de tu circulo:
+          Escribe cuánto mide el radio de tu circulo:
         </label>
         <input id="InputCirculo" type="number" />
         <button type="button" onclick="calcularPerimetroCirculo()">
@@ -56,6 +65,8 @@
         <button type="button" onclick="calcularAreaCirculo()">
           Calcular el área
         </button>
+        <p id="resultPerimetroCirculo"></p>
+        <p id="resultAreaCirculo"></p>
       </form>
     </section>
 
