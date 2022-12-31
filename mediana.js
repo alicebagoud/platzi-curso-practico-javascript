@@ -12,12 +12,6 @@ function calcularPromedio(lista) {
   return promedioLista;
 }
 
-function ordenarLista(listaDesordenada) {
-  const ordenarListaSort = ((valorAcumulado, nuevoValor) => valorAcumulado - nuevoValor);
-  const lista = listaDesordenada.sort(ordenarListaSort);
-  return lista;
-}
-
 function esPar(lista) {
   return !(lista.length % 2); // true (1) si impar y false (0) si par
   // si la lista es de 4 numeros % 2 => a 0 o sea par = true.
@@ -27,6 +21,12 @@ function esPar(lista) {
 function esImpar(lista) {
   return lista.length % 2; // true (1) si par y false (0) si impar
   // si la lista es de 5 numeros % 2 => 1 o sea impar = false.
+}
+
+function ordenarLista(listaDesordenada) {
+  const ordenarListaSort = ((valorAcumulado, nuevoValor) => valorAcumulado - nuevoValor);
+  const listaOrdenada = listaDesordenada.sort(ordenarListaSort);
+  return listaOrdenada;
 }
 
 function calcularMediana(listaDesordenada) {
