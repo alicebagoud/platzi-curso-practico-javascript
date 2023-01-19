@@ -21,38 +21,6 @@ function medianaPorPersona(nombrePersona) {
 
 // Salario Futuro ? 
 
-/* const salaryProjection = persona => {
-    //Array de los porcentajes de incremento
-    let incrementPercentage = [];
-
-    const salarios_ = salarios
-        .find(item => item.name === persona).trabajos
-        .map(item => item.salario);
-
-    //Sacando el procentaje de incremento de salarios
-    const increment = salarios_.forEach((item, index, arr) => {
-        if (index === (arr.length - 1)) {
-            return increment;
-        }
-        //No lo he multiplicado por 100 porque después tendré que dividirlo por 10 de nuevo.
-        let increment = ((arr[index + 1] - arr[index]) / arr[index]);
-        incrementPercentage.push(increment + 1);
-    });
-
-    //Aplicando la media geometrica de los incrementos a 2 decimales.
-    const mg = PlatziMath.mediaGeo(incrementPercentage).toFixed(2);
-
-    //Obteniendo el porcentaje. Es decir: 1.45 => 45% fue el incremento.
-    const percent = (mg - 1).toFixed(2);
-
-    //Calculamos su proyeccion salarial con el porcentaje obtenido.
-    const projSalarial = Math.trunc(salarios_[salarios_.length - 1] * (1 + (percent)));
-    return projSalarial;
-}
-
-console.log(salaryProjection('Juanita'));
- */
-
 function proyeccionSalarioPorPersona(nombrePersona) {
     const trabajos = encontrarPersona(nombrePersona).trabajos;
 
