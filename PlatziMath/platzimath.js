@@ -1,7 +1,8 @@
 const PlatziMath = {};
 
 PlatziMath.esPar = function esPar(lista) {
-    return !(lista.length % 2); // true (1) si impar y false (0) si par
+    return !(lista.length % 2); 
+    // true (1) si impar y false (0) si par
     // si la lista es de 4 numeros % 2 => a 0 o sea par = true.
     // pero como esta negada => !4 numeros % 2 = 1 o sea par = false.
 }
