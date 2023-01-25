@@ -15,7 +15,6 @@ function medianaPorPersona(nombrePersona) {
 
     const medianaSalarios = PlatziMath.calcularMediana(salarios);
 
-    console.log(medianaSalarios);
     return medianaSalarios;
 }
 
@@ -127,4 +126,33 @@ function proyeccionSalarioPorEmpresa(nombre) {
 
         return nuevaMedianaSalario;
     }   
+}
+
+// Analisis general
+
+function medianaGeneral() {
+    const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name));
+
+    const mediana = PlatziMath.calcularMediana(listaMedianas);
+
+    return mediana;
+}
+
+// Mediana de 10%
+
+function medianaTop10() {
+    const listaMedianas = salarios.map(persona => medianaPorPersona(persona.name));
+
+    const medianasOrdenadas = PlatziMath.ordenarLista(listaMedianas);
+
+    const cantidad = listaMedianas.length / 10; // cantidad de elementos que representan al top 10%
+    const limite = listaMedianas.length - cantidad; 
+
+    const top10 = medianasOrdenadas.slice(limite, medianasOrdenadas.length); 
+    /* el metodo slice va a crear un nuevo arreglo que coge los elementos desde la posicion limite y el final del arreglo
+    = para tener los arreglos (salarios) mas altos */
+
+    const medianaTop10 = PlatziMath.calcularMediana(top10);
+
+    return medianaTop10;
 }
