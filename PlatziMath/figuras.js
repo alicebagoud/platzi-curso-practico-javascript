@@ -107,4 +107,3 @@ function calcularAreaCirculo() {
     const resultAreaCirculo = document.getElementById("resultAreaCirculo");
     resultAreaCirculo.innerText = "El área de tu circulo es de: " + area + "cm.";
 }
-
